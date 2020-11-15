@@ -2,7 +2,7 @@ resource "null_resource" "installer" {
 
     provisioner "local-exec" {
 
-        command = "kubectl get namespace elastic-operator || kubectl apply -f https://download.elastic.co/downloads/eck/${ var.operator_version }/all-in-one.yaml"
+        command = "kubectl create namespace elastic-operator && kubectl apply -f https://download.elastic.co/downloads/eck/${ var.operator_version }/all-in-one.yaml"
 
     }
 
