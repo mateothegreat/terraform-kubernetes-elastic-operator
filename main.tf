@@ -8,7 +8,7 @@ resource "null_resource" "installer" {
 
     provisioner "local-exec" {
 
-        when = destroy
+        when = "destroy"
         command = "kubectl --insecure-skip-tls-verify=true --server=\"${ var.host }\" --token=\"${ var.token }\" delete namespace elastic-system"
 
     }
