@@ -12,10 +12,9 @@ variable "token" {
 
 }
 
-variable "operator_version" {
+variable "operator_url" {
 
     type = string
-    description = "elastic operator version"
-    default = "1.2.1"
+    description = "elastic operator url"
 
 }
