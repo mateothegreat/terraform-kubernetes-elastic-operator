@@ -12,10 +12,10 @@ resource "null_resource" "installer" {
 
     }
 
-    provisioner "local-exec" {
-
-        command = "kubectl --insecure-skip-tls-verify=true --server=\"${ var.host }\" --token=\"${ var.token }\" delete validatingwebhookconfigurations.admissionregistration.k8s.io elastic-webhook.k8s.elastic.co"
-
-    }
+#    provisioner "local-exec" {
+#
+#        command = "kubectl --insecure-skip-tls-verify=true --server=\"${ var.host }\" --token=\"${ var.token }\" delete validatingwebhookconfigurations.admissionregistration.k8s.io elastic-webhook.k8s.elastic.co"
+#
+#    }
 
 }
