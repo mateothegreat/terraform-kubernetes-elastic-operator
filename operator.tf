@@ -492,6 +492,12 @@ resource "kubernetes_validating_webhook_configuration" "elatic_webhook_config" {
 
     depends_on = [ kubernetes_stateful_set.elastic_operator ]
 
+    lifecycle {
+
+        ignore_changes = [ webhook ]
+
+    }
+
     metadata {
 
         name = "elastic-webhook.k8s.elastic.co"
@@ -749,6 +755,7 @@ resource "kubernetes_validating_webhook_configuration" "elatic_webhook_config" {
     }
 
     webhook {
+
         name = "elastic-kb-validation-v1.k8s.elastic.co"
 
         client_config {

@@ -3,16 +3,15 @@ resource "kubernetes_manifest" "customresourcedefinition_agents_agent_k8s_elasti
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "agents.agent.k8s.elastic.co"
+            "name"        = "agents.agent.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "agent.k8s.elastic.co"
@@ -660,16 +659,15 @@ resource "kubernetes_manifest" "customresourcedefinition_apmservers_apm_k8s_elas
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "apmservers.apm.k8s.elastic.co"
+            "name"        = "apmservers.apm.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "apm.k8s.elastic.co"
@@ -1615,16 +1613,15 @@ resource "kubernetes_manifest" "customresourcedefinition_beats_beat_k8s_elastic_
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "beats.beat.k8s.elastic.co"
+            "name"        = "beats.beat.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "beat.k8s.elastic.co"
@@ -1973,16 +1970,15 @@ resource "kubernetes_manifest" "customresourcedefinition_elasticmapsservers_maps
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "elasticmapsservers.maps.k8s.elastic.co"
+            "name"        = "elasticmapsservers.maps.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "maps.k8s.elastic.co"
@@ -2430,16 +2426,15 @@ resource "kubernetes_manifest" "customresourcedefinition_elasticsearches_elastic
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "elasticsearches.elasticsearch.k8s.elastic.co"
+            "name"        = "elasticsearches.elasticsearch.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "elasticsearch.k8s.elastic.co"
@@ -4512,16 +4507,15 @@ resource "kubernetes_manifest" "customresourcedefinition_enterprisesearches_ente
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "enterprisesearches.enterprisesearch.k8s.elastic.co"
+            "name"        = "enterprisesearches.enterprisesearch.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "enterprisesearch.k8s.elastic.co"
@@ -5382,20 +5376,20 @@ resource "kubernetes_manifest" "customresourcedefinition_enterprisesearches_ente
 }
 
 resource "kubernetes_manifest" "customresourcedefinition_kibanas_kibana_k8s_elastic_co" {
+
     manifest = {
         "apiVersion" = "apiextensions.k8s.io/v1"
         "kind"       = "CustomResourceDefinition"
         "metadata"   = {
-            "annotations"       = {
+            "annotations" = {
                 "controller-gen.kubebuilder.io/version" = "v0.6.2"
             }
-            "creationTimestamp" = null
-            "labels"            = {
+            "labels"      = {
                 "app.kubernetes.io/instance" = "elastic-operator"
                 "app.kubernetes.io/name"     = "eck-operator-crds"
                 "app.kubernetes.io/version"  = "1.9.1"
             }
-            "name"              = "kibanas.kibana.k8s.elastic.co"
+            "name"        = "kibanas.kibana.k8s.elastic.co"
         }
         "spec"       = {
             "group"    = "kibana.k8s.elastic.co"
