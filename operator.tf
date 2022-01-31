@@ -1,3 +1,17 @@
+terraform {
+
+    required_providers {
+
+        kubernetes = {
+
+            source  = "hashicorp/kubernetes"
+            version = "2.7.1"
+
+        }
+    }
+
+}
+
 resource "kubernetes_namespace" "elastic_system" {
 
     metadata {
