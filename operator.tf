@@ -12,7 +12,6 @@ terraform {
 
 }
 
-
 resource "kubernetes_namespace" "elastic_system" {
 
     metadata {
