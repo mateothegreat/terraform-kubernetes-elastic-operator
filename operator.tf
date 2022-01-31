@@ -66,7 +66,7 @@ resource "kubernetes_config_map" "elastic_operator" {
 
     data = {
 
-        "eck.yaml" = "log-verbosity: 0\nmetrics-port: 0\ncontainer-registry: docker.elastic.co\nmax-concurrent-reconciles: 3\nca-cert-validity: 8760h\nca-cert-rotate-before: 24h\ncert-validity: 8760h\ncert-rotate-before: 24h\nset-default-security-context: true\nkube-client-timeout: 60s\nelasticsearch-client-timeout: 180s\ndisable-telemetry: false\ndistribution-channel: all-in-one\nvalidate-storage-class: true\nenable-webhook: true\nwebhook-name: elastic-webhook.k8s.elastic.co"
+        "eck.yaml" = "log-verbosity: 0\nmetrics-port: 0\ncontainer-registry: docker.elastic.co\nmax-concurrent-reconciles: 3\nca-cert-validity: 8760h\nca-cert-rotate-before: 24h\ncert-validity: 8760h\ncert-rotate-before: 24h\nset-default-security-context: true\nkube-client-timeout: 60s\nelasticsearch-client-timeout: 180s\ndisable-telemetry: false\ndistribution-channel: all-in-one\nvalidate-storage-class: true\nenable-webhook: false\nwebhook-name: elastic-webhook.k8s.elastic.co"
 
     }
 
